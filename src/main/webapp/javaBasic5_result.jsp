@@ -1,6 +1,6 @@
 <%@ page import="util.Utility"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-  pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%
     /* ※todoの部分に処理を追加してください */
 
@@ -26,12 +26,12 @@
 <title>Java基礎_演習問題5</title>
 </head>
 <body>
-  <h1>Java基礎 - 演習問題5</h1>
+	<h1>Java基礎 - 演習問題5</h1>
 
-  <h2>計算結果</h2>
-  <p>
-    面積：<%=result%><br>
-  </p>
-  <a href="javaBasic5_input.jsp">戻る</a>
+	<h2>計算結果</h2>
+	<p>
+		面積：<%=result%><br>
+	</p>
+	<a href="javaBasic5_input.jsp">戻る</a>
 </body>
 </html>

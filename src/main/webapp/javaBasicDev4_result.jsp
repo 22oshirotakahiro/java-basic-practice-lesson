@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-  pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%
     /*
        下記コメントを参考に、必要な処理を記述してください
@@ -53,17 +53,17 @@
 <title>Java基礎_演習問題4(発展)</title>
 </head>
 <body>
-  <h1>Java基礎 - 演習問題4(発展)</h1>
+	<h1>Java基礎 - 演習問題4(発展)</h1>
 
-  <h2>購入結果</h2>
-  <h3><%=msg%></h3>
-  <p>
-    購入前の所持金：<%=money%><br> 購入後の所持金：<%=newMoney%></p>
-  <p>
-    【購入商品】<br>
-    <%=result%>
-  </p>
+	<h2>購入結果</h2>
+	<h3><%=msg%></h3>
+	<p>
+		購入前の所持金：<%=money%><br> 購入後の所持金：<%=newMoney%></p>
+	<p>
+		【購入商品】<br>
+		<%=result%>
+	</p>
 
-  <a href="javaBasicDev4_input.jsp">戻る</a>
+	<a href="javaBasicDev4_input.jsp">戻る</a>
 </body>
 </html>

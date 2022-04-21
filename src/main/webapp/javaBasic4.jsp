@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-  pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%
     /*
     "todo"のコメントが入っているところ以外は処理を実装済です。
@@ -106,38 +106,37 @@
 </head>
 <body>
 
-  <h1>Java基礎 - 演習問題4</h1>
+	<h1>Java基礎 - 演習問題4</h1>
 
-  <div>
-    <h2>サイコロゲーム</h2>
-    <p>出た目の合計が偶数の場合あなたの勝ちです。</p>
-    <form action="javaBasic4.jsp" method="post">
-      <label>振る回数：</label>
-      <input type="number" min="1" max="10" name="num">
-      <br>
-      <button type="submit" name="btn" value="add">開始</button>
-      <button type="submit" name="btn" value="reset">リセット</button>
-    </form>
-  </div>
+	<div>
+		<h2>サイコロゲーム</h2>
+		<p>出た目の合計が偶数の場合あなたの勝ちです。</p>
+		<form action="javaBasic4.jsp" method="post">
+			<label>振る回数：</label> <input type="number" min="1" max="10" name="num">
+			<br>
+			<button type="submit" name="btn" value="add">開始</button>
+			<button type="submit" name="btn" value="reset">リセット</button>
+		</form>
+	</div>
 
-  <div>
-    <h2>結果</h2>
-    <p>
-      出た目：
-      <%=result%>
-    </p>
-    <p>
-      サイコロを振った合計：
-      <%=sum%>
-    </p>
-    <p>
-      勝敗：<%=message%>
-    </p>
-    <h2>戦歴</h2>
-    <p>
-      勝った回数：<%=winNum%>
-      / 実施回数：<%=totalNum%>
-    </p>
-  </div>
+	<div>
+		<h2>結果</h2>
+		<p>
+			出た目：
+			<%=result%>
+		</p>
+		<p>
+			サイコロを振った合計：
+			<%=sum%>
+		</p>
+		<p>
+			勝敗：<%=message%>
+		</p>
+		<h2>戦歴</h2>
+		<p>
+			勝った回数：<%=winNum%>
+			/ 実施回数：<%=totalNum%>
+		</p>
+	</div>
 </body>
 </html>

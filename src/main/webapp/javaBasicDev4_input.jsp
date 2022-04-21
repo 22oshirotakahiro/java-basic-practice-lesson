@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-  pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%
     /*
        下記コメントを参考に、必要な処理を記述してください
@@ -19,68 +19,68 @@
 <title>Java基礎_演習問題4(発展)</title>
 <style>
 table {
-    border-collapse: collapse;
+	border-collapse: collapse;
 }
 
 table th, table td {
-    border: solid 1px black;
+	border: solid 1px black;
 }
 
 .center {
-    text-align: center;
+	text-align: center;
 }
 </style>
 </head>
 <body>
 
-  <h1>Java基礎 - 演習問題4(発展)</h1>
+	<h1>Java基礎 - 演習問題4(発展)</h1>
 
-  <h2>買い物</h2>
+	<h2>買い物</h2>
 
-  <p>
-    現在の所持金:<%=money%></p>
+	<p>
+		現在の所持金:<%=money%></p>
 
-  <span>購入する商品を選択してください</span>
+	<span>購入する商品を選択してください</span>
 
-  <form action="javaBasicDev4_result.jsp" method="post">
-    <table>
-      <tr>
-        <th>選択</th>
-        <th>商品</th>
-        <th>金額</th>
-      </tr>
-      <tr>
-        <td class="center"><label><input type="checkbox"
-            name="product" value="tv"></label></td>
-        <td>テレビ</td>
-        <td>20000</td>
-      </tr>
-      <tr>
-        <td class="center"><label><input type="checkbox"
-            name="product" value="refrigerator"></label></td>
-        <td>冷蔵庫</td>
-        <td>30000</td>
-      </tr>
-      <tr>
-        <td class="center"><label><input type="checkbox"
-            name="product" value="microWave"></label></td>
-        <td>電子レンジ</td>
-        <td>10000</td>
-      </tr>
-      <tr>
-        <td class="center"><label><input type="checkbox"
-            name="product" value="washingMachine"></label></td>
-        <td>洗濯機</td>
-        <td>50000</td>
-      </tr>
-    </table>
-    <button type="submit">購入</button>
-  </form>
+	<form action="javaBasicDev4_result.jsp" method="post">
+		<table>
+			<tr>
+				<th>選択</th>
+				<th>商品</th>
+				<th>金額</th>
+			</tr>
+			<tr>
+				<td class="center"><label><input type="checkbox"
+						name="product" value="tv"></label></td>
+				<td>テレビ</td>
+				<td>20000</td>
+			</tr>
+			<tr>
+				<td class="center"><label><input type="checkbox"
+						name="product" value="refrigerator"></label></td>
+				<td>冷蔵庫</td>
+				<td>30000</td>
+			</tr>
+			<tr>
+				<td class="center"><label><input type="checkbox"
+						name="product" value="microWave"></label></td>
+				<td>電子レンジ</td>
+				<td>10000</td>
+			</tr>
+			<tr>
+				<td class="center"><label><input type="checkbox"
+						name="product" value="washingMachine"></label></td>
+				<td>洗濯機</td>
+				<td>50000</td>
+			</tr>
+		</table>
+		<button type="submit">購入</button>
+	</form>
 
-  <br>
+	<br>
 
-  <form action="javaBasicDev4_input.jsp" method="post">
-    <button type="submit" name="btn" value="reset">リセット</button>
-  </form>
+	<form action="javaBasicDev4_input.jsp" method="post">
+		<button type="submit" name="btn" value="reset">リセット</button>
+	</form>
 </body>
 </html>
