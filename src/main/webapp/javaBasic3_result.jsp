@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%
     // ※必要な処理を実装してください
-
+request.setCharacterEncoding("UTF-8");
     // 入力値取得
 String name = request.getParameter("name");
 
@@ -26,7 +26,6 @@ String bloodType = request.getParameter("bloodType");
 
 	<h2>ロボットからの返信</h2>
 	<div>
-		<!-- 必要に応じて処理を変更してください  -->
 
 		<p>こんにちは、
 		<%if (name.isEmpty()) {

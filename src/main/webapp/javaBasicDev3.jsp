@@ -5,7 +5,56 @@
     // ※必要な処理を実装してください
 
     // 入力値取得
+String Num1;
+String Operator;
+String Num2;
 
+Num1 = request.getParameter("num1");
+Operator = request.getParameter("operator");
+Num2 = request.getParameter("num2");
+
+int number1;
+int number2;
+int answer = 0;
+String operator = null;
+if (Num1 == null || Num2 == null) {
+	number1 = 0;
+	number2 = 0;
+}else if(Num1.isEmpty() || Num2.isEmpty()){
+	number1 = 0;
+	number2 = 0;
+}else {
+	number1 = Integer.parseInt(Num1);
+	number2 = Integer.parseInt(Num2);
+	switch (Operator) {
+	case "add":
+		answer = number1 + number2;
+		operator = "＋";
+		break;
+	case "sub":
+		answer = number1 - number2;
+		operator = "―";
+		break;
+	case "mul":
+		answer = number1 * number2;
+		operator = "×";
+		break;
+	case "div":
+		answer = number1 / number2;
+		operator = "÷";
+		break;
+	}
+}
+
+
+String inputStr = "数値を入力してください";
+if (Num1.isEmpty() && Num2.isEmpty()) {
+	inputStr = "数値が両方とも未入力です";
+} else if (Num1.isEmpty() || Num2.isEmpty()) {
+	inputStr = "数値を入力してください";
+} else {
+	inputStr = number1  + operator + number2 + "＝" + answer;
+}
     // 表示するメッセージ用の変数
 
     // メッセージ作成
@@ -29,7 +78,9 @@
 	<h2>四則演算</h2>
 
 	<p>
-		<!-- メッセージの表示  -->
+	<input type="text" value="	<%
+		out.println(inputStr);
+	%>">
 
 	</p>
 
