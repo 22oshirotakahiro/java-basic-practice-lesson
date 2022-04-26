@@ -1,6 +1,18 @@
 <%@ page import="util.Utility"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%!
+	double GetTriangleArea(int width, int height) {
+		double triaArea;
+		triaArea = (double)(width * height) / 2;
+		return triaArea;
+	}
+	double GetRectangleArea(int width, int height) {
+		double rectArea;
+		rectArea = (double)(width * height);
+		return rectArea;
+	}
+%>
 <%
     /* ※todoの部分に処理を追加してください */
 
@@ -11,12 +23,21 @@
     String btn = request.getParameter("btn");
 
     double result = 0;
+    int width = Integer.parseInt(widthStr);
+    int height = Integer.parseInt(heightStr);
 
     // todo:要実装
     // Utilityクラス内のメソッドを呼んで結果を取得
     // 三角形、長方形のどちらのボタンを押したかを判断し、
     // 押したボタンに対応するメソッドを呼ぶ
-
+	switch (btn) {
+	case "triangle" :
+		result = GetTriangleArea(width, height);
+		break;
+	case "rectangle" :
+		result = GetRectangleArea(width, height);
+		break;
+	}
 %>
 
 <!DOCTYPE html>
