@@ -1,32 +1,6 @@
 <%@ page import="util.ParamUtil"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%!
-int getPoint(double x, String y) {
-	int point = 0;
-	 switch (y) {
-	 case "" :
-		 point = (int)Math.floor(x * 0.01);
-		 break;
-	 case "1" :
-		 point = (int)Math.floor(x * 0.02);
-		 break;
-	 case "2" :
-		 point = (int)Math.floor(x * 0.03);
-		 break;
-	 }
-	 return point;
-}
-boolean isNullOrEmpty(String str) {
-	boolean ble;
-	if (str == null || str.isEmpty()) {
-		ble = true;
-	} else {
-		ble = false;
-	}
-	return ble;
-}
-%>
 
 <!-- ※下記のコメントを参考に、必要に応じて処理を変更してください  -->
 <%
@@ -41,14 +15,14 @@ boolean isNullOrEmpty(String str) {
 
     // 数値に変換
     int amount1 = 0;
-    if (Amount1.isEmpty() || Amount1 == null) {
+    if (ParamUtil.isNullOrEmpty(Amount1)) {
     	amount1 = 0;
     } else {
 	    amount1 = Integer.parseInt(Amount1);
     }
     
     int amount2 = 0;
-    if (Amount2.isEmpty() || Amount2 == null) {
+    if (ParamUtil.isNullOrEmpty(Amount2)) {
     	amount2 = 0;
     } else {
 	    amount2 = Integer.parseInt(Amount2);
@@ -58,8 +32,8 @@ boolean isNullOrEmpty(String str) {
     
 
     // メソッドを呼んでポイントを取得
-    int point1 = getPoint(amount1, rank);
-    int point2 = getPoint(amount2, rank);
+    int point1 = ParamUtil.getPoint(amount1, rank);
+    int point2 = ParamUtil.getPoint(amount2, rank);
 
 %>
 
