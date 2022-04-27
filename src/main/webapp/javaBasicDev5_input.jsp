@@ -6,7 +6,6 @@
 <meta charset="UTF-8">
 <title>Java基礎_演習問題5(発展)</title>
 
-<!-- ※このファイルは全ての処理を実装済です。変更しないでください。  -->
 
 <style>
 .product {
